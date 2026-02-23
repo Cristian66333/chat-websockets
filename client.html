@@ -44,8 +44,8 @@
     const text = msg.value.trim();
     if (!text) return;
 
-    //add("(yo) " + text);   // esto confirma que el botón funciona
-    ws.send(text);            // esto envía al servidor
+    //add("(yo) " + text);
+    ws.send(text);
     msg.value = "";
   }
 

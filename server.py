@@ -4,7 +4,7 @@ import websockets
 CLIENTS = set()
 
 async def handler(ws, *args):
-    # *args cubre versiones donde websockets pasa (ws, path)
+    
     CLIENTS.add(ws)
     try:
         await broadcast("Alguien se conectó")
